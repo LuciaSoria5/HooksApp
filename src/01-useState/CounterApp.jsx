@@ -15,7 +15,7 @@ export const CounterApp = () => {
         <h1>Counter: { counter2 }</h1>
         <h1>Counter: { counter3 }</h1>
         <hr/>
-        <button className='btn' onClick={
+        <button className="btn" onClick={
              () => setCounter({ // hay que actualizar el estado de todo el objeto! no podes solo modificar el estado del counter1
                 ...state, // todo igual, salvo el counter1 que si modificamos
                 counter1: counter1 + 1,
@@ -24,4 +24,4 @@ export const CounterApp = () => {
     </>
 
   )
-}
+};
