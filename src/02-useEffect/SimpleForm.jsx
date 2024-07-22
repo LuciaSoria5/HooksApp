@@ -26,9 +26,9 @@ export const SimpleForm = () => {
     }, [ formState ]); // se ejecuta cada vez que cambia el form
 
     useEffect(() => { 
-        /*console.log("email changed") */
+        // console.log("email changed") 
     }, [ email ]); // se ejecuta cada vez que cambia el email del form
-
+    
   return (
     <>
         <h1>Formulario simple</h1>

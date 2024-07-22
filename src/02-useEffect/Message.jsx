@@ -2,7 +2,7 @@ import { useEffect, useState } from "react"
 
 export const Messagge = () => {
 
-    const [coords, setCoords] = useState({ x:0, y:0 });
+    const [coords, setCoords] = useState({ x: 0, y: 0 });
 
     useEffect(() => {
       //console.log('Message Mounted') // cuando aparece el mensaje
