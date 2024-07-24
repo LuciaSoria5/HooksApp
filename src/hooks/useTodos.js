@@ -6,7 +6,7 @@ import { todoReducer } from "../08-useReducer";
 const init = () => JSON.parse( localStorage.getItem( 'todos' )) || [];
 const initialState = [];
 
-export const useTodo = () => {
+export const useTodos = () => {
 
     const [ todos, dispatch ] = useReducer( todoReducer, initialState, init ); // pasamos la referencia del todoReducer, no lo ejecutamos
 

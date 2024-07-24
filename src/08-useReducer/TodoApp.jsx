@@ -1,9 +1,9 @@
 import { TodoList, TodoAdd } from "./";
-import { useTodo } from "../hooks";
+import { useTodos } from "../hooks";
 
 export const TodoApp = () => {
 
-    const { todos, todosCount, pendingTodosCount, handleDeleteTodo, handleNewTodo, handleToggleTodo } = useTodo( );
+    const { todos, todosCount, pendingTodosCount, handleDeleteTodo, handleNewTodo, handleToggleTodo } = useTodos( );
     
     return (
         <>

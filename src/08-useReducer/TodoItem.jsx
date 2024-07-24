@@ -4,8 +4,8 @@ export const TodoItem = ( { todo, onDeleteTodo, onToggleTodo }) => {
     <li className="list-group-item d-flex justify-content-between">
         
         <span 
-          className={ `align-self-center ${ (todo.done) ? 'text-decoration-line-through' : '' }` }
-
+          className={ `align-self-center ${ ( todo.done ) ? 'text-decoration-line-through' : '' }` }
+          aria-label="span"
           onClick={ () => onToggleTodo( todo.id )}
           >
             { todo.description }
@@ -13,7 +13,7 @@ export const TodoItem = ( { todo, onDeleteTodo, onToggleTodo }) => {
 
         <button 
           className="btn btn-danger mt-2"
-          onClick={ () => onDeleteTodo(todo.id) }
+          onClick={ () => onDeleteTodo( todo.id ) }
           >
             Borrar
         </button>
